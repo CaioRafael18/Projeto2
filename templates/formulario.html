@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto2</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/formulario.css') }}">
+    </head>
+    <body>
+        <div>
+            <form action="/formulario" method="POST" class="form">
+                <h1>formulário</h1>
+                <div class="Primeiro">
+                    <h1>Primeiro produto</h1>
+                    <p>
+                    <input id="produto" type="text" name="produto1" placeholder="Digite o nome do produto">
+                    <p>
+                    <input id="quantidade" type="text" name="quantidade1" placeholder="Digite a quantidade">
+                </div>
+                <div class="Segundo">
+                    <h1>Segundo produto</h1>
+                    <p>
+                    <input id="produto" type="text" name="produto2" placeholder="Digite o nome do produto">
+                    <p>
+                    <input id="quantidade" type="text" name="quantidade2" placeholder="Digite a quantidade">
+                </div>
+                <div class="Terceiro">
+                    <h1>Terceiro produto</h1>
+                    <p>
+                    <input id="produto" type="text" name="produto3" placeholder="Digite o nome do produto" >
+                    <p>
+                    <input id="quantidade" type="text" name="quantidade3" placeholder="Digite a quantidade">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>
